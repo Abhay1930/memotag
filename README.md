@@ -37,6 +37,10 @@ This repository contains a modern, responsive one-page website that showcases th
 - PostgreSQL  
 - Render (cloud hosting)  
 
+---
+
+## 📁 Project Structure
+
 client/ # React frontend
 server/ # Express backend
 
@@ -45,23 +49,6 @@ Copy
 Edit
 
 ---
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v14+)  
-- npm (v6+)
-
----
-
-### 📦 Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/yourusername/memotag.git
-cd memotag
 
 ## 🚀 Getting Started
 
@@ -114,13 +101,15 @@ API runs at: http://localhost:5000
 🧠 PostgreSQL Setup (on Render)
 Log in to render.com
 
-Click New > PostgreSQL
+Click New → PostgreSQL
 
 Set name, region, and plan
 
 Copy your connection string
 
 Paste it in .env under DATABASE_URL
+
+Server will auto-create necessary tables on start
 
 💻 Core Components
 1. Hero Section
@@ -174,30 +163,50 @@ Clean animation logic
 Efficient state + event cleanup
 
 🚀 Deployment
-Frontend → Vercel
-Backend + DB → Render
-Backend (Render)
-Create Web Service
+MemoTag is optimized for deployment using Vercel (for the frontend) and Render (for the backend and database).
 
-Root directory: server
+🗄️ Backend Deployment (Render)
+Push your code to GitHub.
 
-Build: npm install
+Go to Render, click "New" → "Web Service".
 
-Start: node server.js
+Connect your GitHub repo and configure the service:
 
-Env vars:
+Root Directory: server
 
+Environment: Node
+
+Build Command: npm install
+
+Start Command: node server.js
+
+Add Environment Variables:
+
+env
+Copy
+Edit
 PORT=5000
+DATABASE_URL=your_postgresql_connection_url
+🌐 Frontend Deployment (Vercel)
+Update the .env.production file with your backend Render API URL.
 
-DATABASE_URL=...
+Push your frontend code (client folder) to GitHub.
 
-Frontend (Vercel)
-Framework: Vite
+Go to Vercel and import your project.
 
-Root directory: client
+Configure the project:
 
-Update .env.production with backend URL
+Framework Preset: Vite
 
-Connect to GitHub → Deploy 🚀
+Root Directory: client
 
-<center>Developed with ❤️ for MemoTag</center> ```
+Deploy!
+
+✅ Final Notes
+Ensure CORS is handled correctly between frontend and backend.
+
+Secure your environment variables.
+
+Test your live endpoints and forms after deployment.
+
+<p align="center"> Developed with ❤️ for <strong>MemoTag</strong> </p> ```

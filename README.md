@@ -1,215 +1,168 @@
-# MemoTag - AI-Powered Dementia Care Platform
+MemoTag - AI-Powered Dementia Care Platform
+<p align="center"> <img src="https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /> <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" /> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" /> </p>
+MemoTag is an innovative AI-powered platform designed to transform dementia care by helping patients maintain independence and connection through personalized memory assistance.
+This repository contains a modern, responsive one-page website that showcases the MemoTag platform, its features, and its benefits.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-</p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/6892fb2b-e314-4847-a2c0-e91a41d1b5a2" width="800" alt="MemoTag Screenshot" /> </p>
+✨ Features
+Modern UI/UX: Clean, human-centered design with Tailwind CSS
 
-MemoTag is an innovative AI-powered platform designed to transform dementia care by helping patients maintain independence and connection through personalized memory assistance. This repository contains a modern, responsive one-page website that showcases the MemoTag platform, its features, and benefits.
+Responsive Design: Optimized for all devices, from mobile to desktop
 
-<p align="center">
-  <img src="![Screenshot 2025-04-13 203849](https://github.com/user-attachments/assets/6892fb2b-e314-4847-a2c0-e91a41d1b5a2)" width="800" />
-</p>
+Dark Mode: Toggle between light and dark themes
 
-## ✨ Features
+Smooth Animations: Engaging micro-interactions using Framer Motion
 
-- **Modern UI/UX**: Clean, human-centered design with Tailwind CSS
-- **Responsive Design**: Optimized for all devices from mobile to desktop
-- **Dark Mode**: Toggle between light and dark themes
-- **Smooth Animations**: Engaging micro-interactions using Framer Motion
-- **Interactive Elements**: Custom cursor with trail effect, scroll animations
-- **Contact Form**: Backend integration for form submissions with PostgreSQL storage
-- **Waitlist Signup**: Capture interested users' information in PostgreSQL database
+Interactive Elements: Custom cursor with trail effect and scroll animations
 
+Contact Form: Backend integration with PostgreSQL for form submissions
 
-## 🛠️ Tech Stack
+Waitlist Signup: Capture interested users' information into PostgreSQL
 
-### Frontend
-- **React.js**: Component-based UI development
-- **Tailwind CSS**: Utility-first CSS framework for styling
-- **Framer Motion**: Animation library for smooth transitions and effects
+🛠️ Tech Stack
+Frontend
+React.js – Component-based UI development
 
-### Backend
-- **Node.js/Express**: Server for handling form submissions
-- **RESTful API**: Endpoints for contact form and waitlist signup
-- **PostgreSQL**: Database for storing contact form and waitlist entries
-- **Render**: Cloud hosting for PostgreSQL database and backend API
+Tailwind CSS – Utility-first CSS framework
 
-## 📋 Project Structure
+Framer Motion – Smooth transitions and animation effects
 
-This project consists of two main parts:
+Backend
+Node.js / Express – Handles form submissions and backend logic
 
-- `client/`: React.js frontend with Tailwind CSS and Framer Motion
-- `server/`: Express.js backend for form handling
+RESTful API – Manages contact form and waitlist endpoints
 
-## 🚀 Getting Started
+PostgreSQL – Stores contact and waitlist data
 
-### Prerequisites
+Render – Cloud hosting for backend and database
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
+📋 Project Structure
+client/ – React.js frontend
 
-### Installation
+server/ – Express.js backend
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/memotag.git
-   cd memotag
-   ```
+🚀 Getting Started
+Prerequisites
+Node.js (v14 or higher)
 
-### Frontend Setup
+npm (v6 or higher)
 
-1. Navigate to the client directory:
-   ```bash
-   cd client
-   ```
+Installation
+Clone the repository
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/memotag.git
+cd memotag
+Frontend Setup
+bash
+Copy
+Edit
+cd client
+npm install
+npm run dev
+Frontend runs at: http://localhost:5173 (or 5174 if 5173 is occupied)
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+Backend Setup
+bash
+Copy
+Edit
+cd server
+npm install
+Create a .env file:
 
-4. The frontend will be available at http://localhost:5173 (or http://localhost:5174 if port 5173 is in use)
+env
+Copy
+Edit
+PORT=5000
+DATABASE_URL=postgresql://memotag_user:password@hostname/database_name
+⚠️ Replace DATABASE_URL with your actual connection string from Render.
 
-### Backend Setup
+Start backend:
 
-1. Navigate to the server directory:
-   ```bash
-   cd server
-   ```
+bash
+Copy
+Edit
+npm run dev
+Backend runs at: http://localhost:5000
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+🧩 PostgreSQL Database Setup
+Go to render.com
 
-3. Create a `.env` file with the following content:
-   ```
-   PORT=5000
-   DATABASE_URL=postgresql://memotag_user:password@hostname/database_name
-   ```
+Create a new PostgreSQL instance
 
-   Note: Replace the DATABASE_URL with your actual PostgreSQL connection string from Render.
+Copy the External/Internal URL, username, and password
 
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+Update your .env file with the proper database URL
 
-5. The backend API will be available at http://localhost:5000
+The server auto-creates necessary tables on startup.
 
-### Running Both Frontend and Backend
+💻 Core Components
+1. Hero Section
+Catchy headline, CTA, animated visuals, waitlist form
 
-You'll need to run both the frontend and backend servers simultaneously in separate terminal windows to have the full application working.
+2. Problem Section
+Dementia stats, real-world challenges, scroll animations
 
-### PostgreSQL Database Setup
+3. Solution Section
+Step-by-step explanation, interactive feature cards
 
-1. Create a PostgreSQL database on Render:
-   - Go to [render.com](https://render.com) and sign up/login
-   - Click "New" and select "PostgreSQL"
-   - Configure your database with a name, region, and plan
-   - Click "Create Database"
+4. Traction Section
+Metrics, testimonials, partner logos
 
-2. Once created, Render will provide you with:
-   - Internal Database URL
-   - External Database URL
-   - Username and password
+5. Contact Section
+Form with user-type selection, success/error feedback
 
-3. Update your server's `.env` file with the database connection string:
-   ```
-   DATABASE_URL=postgresql://username:password@hostname/database_name
-   ```
+🔥 Key Implementation Details
+✨ Interactive Elements
+Custom Cursor with trailing effect
 
-4. The server will automatically create the necessary tables when it starts up.
+Scroll Animations triggered on visibility
 
-## 💻 Core Components
+Hover Effects on cards and buttons
 
-### 1. Hero Section
-- Clean headline with CTA button
-- Animated visuals with Framer Motion
-- Waitlist signup form
+📱 Responsive Design
+Mobile-first, adaptive layouts
 
-### 2. Problem Section
-- Statistics on dementia and memory care challenges
-- Visual representation of the problem
-- Scroll-triggered animations
+Optimized assets for all screen sizes
 
-### 3. Solution Section
-- "How MemoTag Works" with step-by-step explanation
-- Interactive feature cards
-- Visual aids for better understanding
+🌙 Dark Mode
+Syncs with system preferences
 
-### 4. Traction Section
-- Key metrics and statistics
-- Testimonial from healthcare professional
-- Partner logos
+Manual toggle in navbar
 
-### 5. Contact Section
-- Form for demo requests and inquiries
-- User type selection for better lead qualification
-- Success/error message handling
+⚡ Performance Optimization
+Lightweight animations
 
-## 🔥 Key Implementation Details
+Efficient state handling
 
-### Interactive UI Elements
-- **Custom Cursor with Trail**: A unique cursor follower with trailing circles that adds a modern touch to the user experience
-- **Scroll-Triggered Animations**: Elements that animate into view as the user scrolls down the page
-- **Hover Effects**: Subtle animations on interactive elements like buttons and cards
+Event listener cleanup
 
-### Responsive Design
-- Mobile-first approach with Tailwind CSS
-- Tailored layouts for different screen sizes
-- Optimized images and assets
+🌍 Deployment
+Frontend → Vercel
+Backend + DB → Render
 
-### Dark Mode
-- System preference detection
-- Manual toggle in the navbar
-- Consistent styling across both themes
+Backend Deployment (Render)
+Create new Web Service
 
-### Performance Optimization
-- Optimized animations for better performance
-- Efficient state management
-- Proper cleanup of event listeners
+Root Directory: server
 
-## 🚀 Deployment
+Build Command: npm install
 
-### Recommended: Vercel (Frontend) + Render (Backend + Database)
+Start Command: node server.js
 
-This project is optimized for deployment with Vercel for the frontend and Render for the backend and database:
+Add environment variables:
 
-1. **Database Setup**:
-   - Create a PostgreSQL database on Render as described in the PostgreSQL Database Setup section
+PORT=5000
 
-2. **Backend Deployment**:
-   - Push your code to a GitHub repository
-   - In the Render dashboard, click "New" and select "Web Service"
-   - Connect your GitHub repository
-   - Configure the service:
-     - Root Directory: `server` (if your Express code is in a server folder)
-     - Environment: `Node`
-     - Build Command: `npm install`
-     - Start Command: `node server.js`
-   - Add environment variables:
-     - `PORT`: 5000
-     - `DATABASE_URL`: Use the Internal Database URL from your PostgreSQL instance
-   - Click "Create Web Service"
+DATABASE_URL=...
 
-3. **Frontend Deployment**:
-   - Update the `.env.production` file with your Render backend URL
-   - Push your code to GitHub
-   - Connect your repository to Vercel
-   - Configure the build settings:
-     - Framework Preset: Vite
-     - Root Directory: `client`
-   - Deploy the project
+Frontend Deployment (Vercel)
+Update .env.production with backend URL
 
-<p align="center">
-Developed with ❤️ for MemoTag
-</p>
+Deploy using Vite + React setup
+
+Root Directory: client
+
+<p align="center"> Developed with ❤️ for MemoTag </p>

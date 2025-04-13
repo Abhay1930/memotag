@@ -61,11 +61,6 @@ Edit
 
 ### 📦 Installation
 
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/yourusername/memotag.git
-cd memotag
 ⚛️ Frontend Setup
 bash
 Copy

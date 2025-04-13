@@ -144,7 +144,7 @@ Body:
 
 ## 📧 Contact
 
-Your Name - [thakurabhay975@gmail.com](mailto:thakurabhay975@gmail.com)
+MAil - [thakurabhay975@gmail.com](mailto:thakurabhay975@gmail.com)
 
 Project Link: [https://github.com/Abhay1930/memotag](https://github.com/Abhay1930/memotag)
 

@@ -11,7 +11,7 @@ MemoTag is an innovative AI-powered platform designed to transform dementia care
 
 ## 🌟 Live Demo
 
-- Frontend: [https://memotag.vercel.app](https://memotag.vercel.app)
+- Frontend: [https://memotag.vercel.app](https://memotag-chi.vercel.app/)
 
 
 ## ✨ Features

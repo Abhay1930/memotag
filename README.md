@@ -27,9 +27,11 @@ This repository contains a modern, responsive one-page website that showcases th
 ## 🛠️ Tech Stack
 
 ### Frontend
+```bash
 - React.js  
 - Tailwind CSS  
-- Framer Motion  
+- Framer Motion
+```
 
 ### Backend
 - Node.js / Express  

@@ -132,9 +132,7 @@ Body:
 3. Set environment variables:
    - `DATABASE_URL`: Your PostgreSQL connection string
 
-## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Contributing
 
@@ -146,9 +144,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [your.email@example.com](mailto:your.email@example.com)
+Your Name - [thakurabhay975@gmail.com](mailto:thakurabhay975@gmail.com)
 
-Project Link: [https://github.com/yourusername/memotag](https://github.com/yourusername/memotag)
+Project Link: [https://github.com/Abhay1930/memotag](https://github.com/Abhay1930/memotag)
 
 ---
 

@@ -1,70 +1,81 @@
-MemoTag - AI-Powered Dementia Care Platform
-<p align="center"> <img src="https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /> <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" /> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" /> </p>
-MemoTag is an innovative AI-powered platform designed to transform dementia care by helping patients maintain independence and connection through personalized memory assistance.
+# MemoTag - AI-Powered Dementia Care Platform
+
+![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+
+**MemoTag** is an innovative AI-powered platform designed to transform dementia care by helping patients maintain independence and connection through personalized memory assistance.  
 This repository contains a modern, responsive one-page website that showcases the MemoTag platform, its features, and its benefits.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/6892fb2b-e314-4847-a2c0-e91a41d1b5a2" width="800" alt="MemoTag Screenshot" /> </p>
-✨ Features
-Modern UI/UX: Clean, human-centered design with Tailwind CSS
+![MemoTag Screenshot](https://github.com/user-attachments/assets/6892fb2b-e314-4847-a2c0-e91a41d1b5a2)
 
-Responsive Design: Optimized for all devices, from mobile to desktop
+---
 
-Dark Mode: Toggle between light and dark themes
+## ✨ Features
 
-Smooth Animations: Engaging micro-interactions using Framer Motion
+- **Modern UI/UX** – Clean, human-centered design with Tailwind CSS  
+- **Responsive Design** – Optimized for all devices from mobile to desktop  
+- **Dark Mode** – Toggle between light and dark themes  
+- **Smooth Animations** – Engaging micro-interactions using Framer Motion  
+- **Interactive Elements** – Custom cursor, scroll animations  
+- **Contact Form** – Backend integration with PostgreSQL  
+- **Waitlist Signup** – Capture user info in PostgreSQL  
 
-Interactive Elements: Custom cursor with trail effect and scroll animations
+---
 
-Contact Form: Backend integration with PostgreSQL for form submissions
+## 🛠️ Tech Stack
 
-Waitlist Signup: Capture interested users' information into PostgreSQL
+### Frontend
+- React.js  
+- Tailwind CSS  
+- Framer Motion  
 
-🛠️ Tech Stack
-Frontend
-React.js – Component-based UI development
+### Backend
+- Node.js / Express  
+- RESTful API  
+- PostgreSQL  
+- Render (cloud hosting)  
 
-Tailwind CSS – Utility-first CSS framework
+---
 
-Framer Motion – Smooth transitions and animation effects
+## 📁 Project Structure
 
-Backend
-Node.js / Express – Handles form submissions and backend logic
+client/ # React frontend
+server/ # Express backend
 
-RESTful API – Manages contact form and waitlist endpoints
-
-PostgreSQL – Stores contact and waitlist data
-
-Render – Cloud hosting for backend and database
-
-📋 Project Structure
-client/ – React.js frontend
-
-server/ – Express.js backend
-
-🚀 Getting Started
-Prerequisites
-Node.js (v14 or higher)
-
-npm (v6 or higher)
-
-Installation
-Clone the repository
-
-bash
+yaml
 Copy
 Edit
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14+)  
+- npm (v6+)
+
+---
+
+### 📦 Installation
+
+1. **Clone the repository**
+
+```bash
 git clone https://github.com/yourusername/memotag.git
 cd memotag
-Frontend Setup
+⚛️ Frontend Setup
 bash
 Copy
 Edit
 cd client
 npm install
 npm run dev
-Frontend runs at: http://localhost:5173 (or 5174 if 5173 is occupied)
+Open: http://localhost:5173
 
-Backend Setup
+🖥️ Backend Setup
 bash
 Copy
 Edit
@@ -77,92 +88,103 @@ Copy
 Edit
 PORT=5000
 DATABASE_URL=postgresql://memotag_user:password@hostname/database_name
-⚠️ Replace DATABASE_URL with your actual connection string from Render.
+Replace the DATABASE_URL with your actual PostgreSQL connection string from Render.
 
-Start backend:
+Start the server:
 
 bash
 Copy
 Edit
 npm run dev
-Backend runs at: http://localhost:5000
+API runs at: http://localhost:5000
 
-🧩 PostgreSQL Database Setup
-Go to render.com
+🧠 PostgreSQL Setup (on Render)
+Log in to render.com
 
-Create a new PostgreSQL instance
+Click New > PostgreSQL
 
-Copy the External/Internal URL, username, and password
+Set name, region, and plan
 
-Update your .env file with the proper database URL
+Copy your connection string
 
-The server auto-creates necessary tables on startup.
+Paste it in .env under DATABASE_URL
 
 💻 Core Components
 1. Hero Section
-Catchy headline, CTA, animated visuals, waitlist form
+Headline + CTA + animated visuals
+
+Waitlist form
 
 2. Problem Section
-Dementia stats, real-world challenges, scroll animations
+Dementia stats
+
+Scroll-triggered animations
 
 3. Solution Section
-Step-by-step explanation, interactive feature cards
+“How MemoTag Works” explanation
+
+Feature cards
 
 4. Traction Section
-Metrics, testimonials, partner logos
+Metrics + testimonials + logos
 
 5. Contact Section
-Form with user-type selection, success/error feedback
+Demo request form
 
-🔥 Key Implementation Details
-✨ Interactive Elements
-Custom Cursor with trailing effect
+User-type selector
 
-Scroll Animations triggered on visibility
+Success/error handling
 
-Hover Effects on cards and buttons
+🔧 Key Implementation Details
+✨ UI Effects
+Custom cursor with trail
 
-📱 Responsive Design
-Mobile-first, adaptive layouts
+Scroll-triggered animations
 
-Optimized assets for all screen sizes
+Hover transitions
+
+📱 Responsiveness
+Mobile-first design
+
+Layouts for all screen sizes
 
 🌙 Dark Mode
-Syncs with system preferences
+Detects system preference
 
-Manual toggle in navbar
+Manual toggle
 
-⚡ Performance Optimization
-Lightweight animations
+⚡ Performance
+Optimized assets
 
-Efficient state handling
+Clean animation logic
 
-Event listener cleanup
+Efficient state + event cleanup
 
-🌍 Deployment
+🚀 Deployment
 Frontend → Vercel
 Backend + DB → Render
+Backend (Render)
+Create Web Service
 
-Backend Deployment (Render)
-Create new Web Service
+Root directory: server
 
-Root Directory: server
+Build: npm install
 
-Build Command: npm install
+Start: node server.js
 
-Start Command: node server.js
-
-Add environment variables:
+Env vars:
 
 PORT=5000
 
 DATABASE_URL=...
 
-Frontend Deployment (Vercel)
+Frontend (Vercel)
+Framework: Vite
+
+Root directory: client
+
 Update .env.production with backend URL
 
-Deploy using Vite + React setup
+Connect to GitHub → Deploy 🚀
 
-Root Directory: client
-
-<p align="center"> Developed with ❤️ for MemoTag </p>
+<center>Developed with ❤️ for MemoTag</center> ```

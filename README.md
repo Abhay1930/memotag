@@ -10,7 +10,7 @@
 MemoTag is an innovative AI-powered platform designed to transform dementia care by helping patients maintain independence and connection through personalized memory assistance. This repository contains a modern, responsive one-page website that showcases the MemoTag platform, its features, and benefits.
 
 <p align="center">
-  <img src="client/public/screenshot.png" alt="MemoTag Website Screenshot" width="800" />
+  <img src="![Screenshot 2025-04-13 203849](https://github.com/user-attachments/assets/6892fb2b-e314-4847-a2c0-e91a41d1b5a2)" width="800" />
 </p>
 
 ## ✨ Features
@@ -22,6 +22,7 @@ MemoTag is an innovative AI-powered platform designed to transform dementia care
 - **Interactive Elements**: Custom cursor with trail effect, scroll animations
 - **Contact Form**: Backend integration for form submissions with PostgreSQL storage
 - **Waitlist Signup**: Capture interested users' information in PostgreSQL database
+
 
 ## 🛠️ Tech Stack
 

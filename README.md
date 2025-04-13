@@ -63,9 +63,10 @@ Edit
 ### 📦 Installation
 
 ⚛️ Frontend Setup
-bash
+
 Copy
 Edit
+```bash
 cd client
 npm install
 npm run dev

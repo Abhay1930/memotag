@@ -1,210 +1,155 @@
 # MemoTag - AI-Powered Dementia Care Platform
 
-![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+</p>
 
-**MemoTag** is an innovative AI-powered platform designed to transform dementia care by helping patients maintain independence and connection through personalized memory assistance.  
-This repository contains a modern, responsive one-page website that showcases the MemoTag platform, its features, and its benefits.
+MemoTag is an innovative AI-powered platform designed to transform dementia care by helping patients maintain independence and connection through personalized memory assistance. This repository contains a modern, responsive one-page website that showcases the MemoTag platform, its features, and benefits.
 
-![MemoTag Screenshot](https://github.com/user-attachments/assets/6892fb2b-e314-4847-a2c0-e91a41d1b5a2)
+## 🌟 Live Demo
 
----
+- Frontend: [https://memotag.vercel.app](https://memotag.vercel.app)
+
 
 ## ✨ Features
 
-- **Modern UI/UX** – Clean, human-centered design with Tailwind CSS  
-- **Responsive Design** – Optimized for all devices from mobile to desktop  
-- **Dark Mode** – Toggle between light and dark themes  
-- **Smooth Animations** – Engaging micro-interactions using Framer Motion  
-- **Interactive Elements** – Custom cursor, scroll animations  
-- **Contact Form** – Backend integration with PostgreSQL  
-- **Waitlist Signup** – Capture user info in PostgreSQL  
-
----
+- **Modern UI/UX**: Clean, human-centered design with Tailwind CSS
+- **Responsive Design**: Optimized for all devices from mobile to desktop
+- **Dark Mode**: Toggle between light and dark themes
+- **Smooth Animations**: Engaging micro-interactions using Framer Motion
+- **Interactive Elements**: Custom cursor with trail effect, scroll animations
+- **Contact Form**: Backend integration for form submissions with PostgreSQL storage
+- **Waitlist Signup**: Capture interested users' information in PostgreSQL database
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React.js  
-- Tailwind CSS  
-- Framer Motion
-
+- **React.js**: Component-based UI development
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **Framer Motion**: Animation library for smooth transitions and effects
+- **Vite**: Next-generation frontend tooling
 
 ### Backend
-- Node.js / Express  
-- RESTful API  
-- PostgreSQL  
-- Render (cloud hosting)  
-
----
-
-## 📁 Project Structure
-
-client/ # React frontend
-server/ # Express backend
-
-yaml
-Copy
-Edit
-
----
+- **Node.js/Express**: Server for handling form submissions
+- **RESTful API**: Endpoints for contact form and waitlist signup
+- **PostgreSQL**: Database for storing contact form and waitlist entries
+- **Render**: Cloud hosting for PostgreSQL database and backend API
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v14+)  
-- npm (v6+)
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- PostgreSQL database
 
----
+### Installation
 
-### 📦 Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/memotag.git
+cd memotag
+```
 
-⚛️ Frontend Setup
-
-Copy
-Edit
+2. Frontend Setup:
 ```bash
 cd client
 npm install
 npm run dev
 ```
-Open: http://localhost:5173
 
-🖥️ Backend Setup
-bash
-Copy
-Edit
+3. Backend Setup:
+```bash
 cd server
 npm install
-Create a .env file:
+```
 
-env
-Copy
-Edit
+4. Create `.env` file in server directory:
+```env
 PORT=5000
-DATABASE_URL=postgresql://memotag_user:password@hostname/database_name
-Replace the DATABASE_URL with your actual PostgreSQL connection string from Render.
+DATABASE_URL=your_postgresql_connection_string
+```
 
-Start the server:
-
-bash
-Copy
-Edit
+5. Start the backend:
+```bash
 npm run dev
-API runs at: http://localhost:5000
+```
 
-🧠 PostgreSQL Setup (on Render)
-Log in to render.com
+## 📁 Project Structure
 
-Click New → PostgreSQL
+```
+memotag/
+├── client/                 # React frontend
+│   ├── public/            # Static files
+│   ├── src/               # Source files
+│   └── package.json       # Frontend dependencies
+└── server/                # Express backend
+    ├── server.js          # Main server file
+    └── package.json       # Backend dependencies
+```
 
-Set name, region, and plan
+## 🌐 API Endpoints
 
-Copy your connection string
+### Contact Form
+```http
+POST /api/contact
+```
+Body:
+```json
+{
+  "name": "string",
+  "email": "string",
+  "message": "string",
+  "userType": "string"
+}
+```
 
-Paste it in .env under DATABASE_URL
+### Waitlist
+```http
+POST /api/waitlist
+```
+Body:
+```json
+{
+  "email": "string",
+  "userType": "string"
+}
+```
 
-Server will auto-create necessary tables on start
+## 🚀 Deployment
 
-💻 Core Components
-1. Hero Section
-Headline + CTA + animated visuals
+### Frontend (Vercel)
+1. Connect your GitHub repository
+2. Set environment variables:
+   - `VITE_API_URL`: Your Render backend URL
 
-Waitlist form
+### Backend (Render)
+1. Create a new Web Service
+2. Connect your GitHub repository
+3. Set environment variables:
+   - `DATABASE_URL`: Your PostgreSQL connection string
 
-2. Problem Section
-Dementia stats
+## 📝 License
 
-Scroll-triggered animations
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-3. Solution Section
-“How MemoTag Works” explanation
+## 👥 Contributing
 
-Feature cards
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-4. Traction Section
-Metrics + testimonials + logos
+## 📧 Contact
 
-5. Contact Section
-Demo request form
+Your Name - [your.email@example.com](mailto:your.email@example.com)
 
-User-type selector
+Project Link: [https://github.com/yourusername/memotag](https://github.com/yourusername/memotag)
 
-Success/error handling
+---
 
-🔧 Key Implementation Details
-✨ UI Effects
-Custom cursor with trail
-
-Scroll-triggered animations
-
-Hover transitions
-
-📱 Responsiveness
-Mobile-first design
-
-Layouts for all screen sizes
-
-🌙 Dark Mode
-Detects system preference
-
-Manual toggle
-
-⚡ Performance
-Optimized assets
-
-Clean animation logic
-
-Efficient state + event cleanup
-
-🚀 Deployment
-MemoTag is optimized for deployment using Vercel (for the frontend) and Render (for the backend and database).
-
-🗄️ Backend Deployment (Render)
-Push your code to GitHub.
-
-Go to Render, click "New" → "Web Service".
-
-Connect your GitHub repo and configure the service:
-
-Root Directory: server
-
-Environment: Node
-
-Build Command: npm install
-
-Start Command: node server.js
-
-Add Environment Variables:
-
-env
-Copy
-Edit
-PORT=5000
-DATABASE_URL=your_postgresql_connection_url
-🌐 Frontend Deployment (Vercel)
-Update the .env.production file with your backend Render API URL.
-
-Push your frontend code (client folder) to GitHub.
-
-Go to Vercel and import your project.
-
-Configure the project:
-
-Framework Preset: Vite
-
-Root Directory: client
-
-Deploy!
-
-✅ Final Notes
-Ensure CORS is handled correctly between frontend and backend.
-
-Secure your environment variables.
-
-Test your live endpoints and forms after deployment.
-
-<p align="center"> Developed with ❤️ for <strong>MemoTag</strong> </p> ```
+<p align="center">Made with ❤️ for MemoTag</p>

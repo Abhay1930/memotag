@@ -27,11 +27,10 @@ This repository contains a modern, responsive one-page website that showcases th
 ## 🛠️ Tech Stack
 
 ### Frontend
-```bash
 - React.js  
 - Tailwind CSS  
 - Framer Motion
-```
+
 
 ### Backend
 - Node.js / Express  
@@ -70,6 +69,7 @@ Edit
 cd client
 npm install
 npm run dev
+```
 Open: http://localhost:5173
 
 🖥️ Backend Setup
